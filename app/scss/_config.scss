@@ -51,6 +51,15 @@ input, textarea {
 	&:required:valid { border-color: green }
 }
 
+.container {
+	max-width: 970px;
+	margin: 0 auto;
+}
+.container-content {
+	max-width: 813px;
+	margin: 0 auto;
+}
+
 body {
 	font-family: $roboto;
 	font-size: $fontsize;
