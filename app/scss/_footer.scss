@@ -1,5 +1,28 @@
 .footer {
+	background-color: #8C001A;
+
 	&__items {
 		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		&-title {
+			font-family: Lato;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 20px;
+			color: #fff;
+		}
+		&-link {
+			font-family: Lato;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 19px;
+			color: #fff;
+			text-decoration: none;
+			list-style: none;
+		}
 	}
 }
