@@ -1,5 +1,6 @@
 .footer {
 	background-color: #8C001A;
+	padding: 52px 0 85px;
 
 	&__items {
 		display: flex;
@@ -13,6 +14,7 @@
 			font-size: 15px;
 			line-height: 20px;
 			color: #fff;
+			margin-bottom: 18px;
 		}
 		&-link {
 			font-family: Lato;
