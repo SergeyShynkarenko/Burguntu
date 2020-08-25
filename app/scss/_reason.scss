@@ -1,31 +1,16 @@
 .reason {
-	padding: 100px 0 152px;
+	padding-top: 100px;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 	}
-	&__title {
-		font-family: Georgia;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 32px;
-		line-height: 38px;
-		color: #4E5665;
-	}
 	&__text {
-		font-family: Lato;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 28px;
-		color: #505050;
 		width: 540px;
 	}
 	&__link {
 		a {
-		font-family: Lato;
-		font-style: normal;
-		font-weight: bold;
+		font-family: Lato sans-serif;
+		font-weight: 700;
 		font-size: 16px;
 		line-height: 28px;
 		text-decoration: none;
@@ -40,18 +25,16 @@
 		&-num {
 			margin-top: 32px;
 			text-align: center;
-			font-family: Lato;
-			font-style: normal;
-			font-weight: bold;
+			font-family: Lato sans-serif;
+			font-weight: 700;
 			font-size: 22px;
 			line-height: 30px;
 			color: #4E5665;
 		}
 		&-text {
 			text-align: center;
-			font-family: Lato;
-			font-style: normal;
-			font-weight: bold;
+			font-family: Lato sans-serif;
+			font-weight: 700;
 			font-size: 14px;
 			line-height: 17px;
 			color: #909090;

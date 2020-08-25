@@ -1,11 +1,30 @@
 .about {
-	padding-bottom: 100px;
+	padding-bottom: 110px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 152px;
+	}
+	&__text {
+		width: 540px;
+	}
+	&__link {
+		a {
+		font-family: Lato sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 28px;
+		text-decoration: none;
+		color: #8C001A;
+		}
+	}
+
 	&__item {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 100px;
 		&-title {
-			font-family: Georgia;
+			font-family: Georgia sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -14,20 +33,23 @@
 			margin-bottom: 30px;
 		}
 		&-text {
-			font-family: Lato;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 28px;
 			max-width: 390px;
-			color: #505050;
 		}
 		&-text:nth-child(even) {
 			max-width: 342px;
 		}
 	}
+	&__box {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+
 	&__box:nth-child(even) {
 		text-align: right;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	&__text-box {
 		display: flex;
@@ -35,18 +57,73 @@
 	}
 	&__preview-text {
 		width: 536px;
-		font-family: Lato;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 28px;
-		color: #505050;
 	}
-	&__preview-title {
-		font-family: Georgia;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 32px;
-		line-height: 38px;
+
+	&__images-box {
+		position: relative;
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__dot {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background-color: rgba(140, 0, 26, .75);
+		position: absolute;
+		cursor: pointer;
+		&:hover::before {
+			content: '';
+			display: block;
+		}
+		&:hover .about__dot-text {
+			display: block;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #8C001A;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url('../images/dest/line.svg');
+			width: 245px;
+			height: 120px;
+			bottom: 20px;
+    	left: 15px;
+			display: none;
+		}
+		&-text {
+			position: absolute;
+			white-space: nowrap;
+			bottom: 130px;
+    	left: 150px;
+    	font-weight: 700;
+			display: none;
+		}
+		&--1 {
+    	bottom: 365px;
+    	left: 475px;
+		}
+
+		&--2 {
+    	bottom: 223px;
+    	left: 546px;
+		}
+
+		&--3 {
+			bottom: 119px;
+    	left: 390px;
+		}
 	}
 }

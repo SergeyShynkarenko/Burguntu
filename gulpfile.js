@@ -10,9 +10,9 @@ let paths = {
 
 	scripts: {
 		src: [
-			baseDir + '/libs/jquery/jquery-3.5.1.min.js'
+			baseDir + '/libs/jquery/jquery-3.5.1.min.js',
 			// 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			baseDir + '/js/app.js' // app.js. Always at the end
+			baseDir + '/js/app.js' ,// app.js. Always at the end
 			baseDir + '/libs/slick/slick.min.js'
 		],
 		dest: baseDir + '/js',

@@ -9,7 +9,6 @@
 	&__item {
 		&-title {
 			font-family: Lato;
-			font-style: normal;
 			font-weight: bold;
 			font-size: 15px;
 			line-height: 20px;
@@ -18,7 +17,6 @@
 		}
 		&-link {
 			font-family: Lato;
-			font-style: normal;
 			font-weight: normal;
 			font-size: 14px;
 			line-height: 19px;
@@ -26,5 +24,35 @@
 			text-decoration: none;
 			list-style: none;
 		}
+		&-link--social {
+			padding-left: 29px;
+		}
+
+		&-link--contact {
+			background-image: url('../images/dest/contact.svg');
+			background-repeat: no-repeat;	
+
+		}
+
+		&-link--facebook {
+			background-image: url('../images/dest/facebook.svg');
+			background-repeat: no-repeat;
+		}
+
+		&-link--instagram {  
+			background-image: url('../images/dest/instagram.svg');
+			background-repeat: no-repeat;
+		}
+
+		&-link--youTube {  
+			background-image: url('../images/dest/youTube.svg');
+			background-repeat: no-repeat;
+		}
+
+		&-link--newsletter {  
+			background-image: url('../images/dest/email.svg');
+			background-repeat: no-repeat;
+		}
+
 	}
 }

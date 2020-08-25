@@ -4,7 +4,7 @@ $accent: orange; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #505050; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
-$roboto: Lato, sans-serif; // Roboto Font Family
+$lato: Lato-Regular, sans-serif; // Roboto Font Family
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -30,7 +30,8 @@ $gutter: $grid-gutter-width;
 	}
 }
 
-@include font('Georgia', normal, 700, '../fonts/Georgia-Bold.woff2');
+@include font('Georgia', normal, 400, '../fonts/Georgia.woff2');
+@include font('Georgia-Bold', normal, 700, '../fonts/Georgia-Bold.woff2');
 @include font('Lato-Regular', normal, 400, '../fonts/Lato-Regular.woff2');
 
 // GENERAL DOCUMENT STYLES
@@ -71,13 +72,21 @@ ul {
 	max-width: 813px;
 	margin: 0 auto;
 }
-
 body {
-	font-family: $roboto;
+	font-family: $lato;
+	font-weight: 400;
 	font-size: $fontsize;
+	line-height: 28px;
 	min-width: 320px;
 	position: relative;
 	line-height: 28px;
 	overflow-x: hidden;
 	color: $textcolor;
+}
+.title {
+	font-family: Georgia sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 38px;
+	color: #4E5665;
 }
